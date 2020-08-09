@@ -11,5 +11,6 @@
 #include "framework.h"
 #include <iostream>
 #include <api/loader.h>
+#include <mcapi/Player.h>
 
 #endif //PCH_H

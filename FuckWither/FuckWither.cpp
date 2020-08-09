@@ -14,13 +14,13 @@ void entry()
 	enableSkullDestroy = false;
 	if (!fs)
 	{
-		std::cout << "[FuckWither] " << config_file <<" not found, creating file(default value used)\n";
+		std::cout << "[FuckWither] " << config_file << " not found, creating file(default value used)\n";
 		std::ofstream of(config_file);
 		if (of)
 		{
-			of << "{\"enableWitherDestroy\": false";
+			of << "{\n\"enableWitherDestroy\": false,\n\"enableSkullDestroy\": false\n}";
 		}
-		else 
+		else
 		{
 			std::cout << "[FuckWither] " << "config file creation failed, plase create \"config\" folder\n";
 		}
@@ -36,6 +36,7 @@ void entry()
 		rapidjson::Document document;
 		document.Parse(json.c_str());
 		enableWitherDestroy = document["enableWitherDestroy"].GetBool();
+		enableSkullDestroy = document["enableSkullDestroy"].GetBool();
 	}
 
 	std::cout << "[FuckWither] Loaded!\n";
@@ -45,4 +46,10 @@ THook(bool, "?canDestroy@WitherBoss@@SA_NAEBVBlock@@@Z", void* blockpos)
 {
 	if (!enableWitherDestroy) return false;
 	return original(blockpos);
+}
+
+THook(bool, "?canDestroyBlock@WitherSkull@@UEBA_NAEBVBlock@@@Z", void* thi, void* blockpos)
+{
+	if (!enableSkullDestroy) return false;
+	return original(thi, blockpos);
 }
