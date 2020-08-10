@@ -29,7 +29,7 @@
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="FuckWither_BDX.cpp">
+    <ClCompile Include="FuckWither.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
