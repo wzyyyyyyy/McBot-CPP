@@ -10,5 +10,7 @@
 // 添加要在此处预编译的标头
 #include <iostream>
 #include <bdxcore.h>
-
+#include <string>
+#include<winsock.h>
+#pragma comment(lib,"ws2_32.lib")
 #endif //PCH_H
