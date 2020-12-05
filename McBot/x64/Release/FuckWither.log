@@ -1,14 +1,13 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(477,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: 中间目录(x64\Release\)包含从另一个项目(FuckWither.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
-  pch.cpp
-  BDSCLASS.hpp
-  dllmain.cpp
   源.cpp
-C:\Users\Administrator\source\repos\FuckWither\McBot\源.cpp(90,51): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\Administrator\source\repos\FuckWither\McBot\源.cpp(103,51): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\Administrator\source\repos\FuckWither\McBot\源.cpp(107,44): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\Administrator\source\repos\FuckWither\McBot\源.cpp(113,44): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
     正在创建库 ..\..\..\..\Desktop\1.16.100\bdxcore_mod\McBot.lib 和对象 ..\..\..\..\Desktop\1.16.100\bdxcore_mod\McBot.exp
   正在生成代码
-  232 of 238 functions (97.5%) were compiled, the rest were copied from previous compilation.
-    5 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+  1 of 250 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
   FuckWither.vcxproj -> C:\Users\Administrator\Desktop\1.16.100\bdxcore_mod\McBot.dll
