@@ -75,7 +75,7 @@
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)sdk;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)sdk;$(LibraryPath)</LibraryPath>
-    <OutDir>..\..\..\..\Desktop\1.16.100\bdxcore_mod</OutDir>
+    <OutDir>..\..\..\..\Desktop\1.16.200\bdxcore_mod</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -172,7 +172,7 @@
     <ClCompile Include="源.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\sdk\BDXCORE.lib" />
+    <Library Include="..\sdk\LIGHTBASE.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

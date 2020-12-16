@@ -37,6 +37,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\sdk\BDXCORE.lib" />
+    <Library Include="..\sdk\LIGHTBASE.lib">
+      <Filter>资源文件</Filter>
+    </Library>
   </ItemGroup>
 </Project>
